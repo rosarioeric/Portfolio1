@@ -5,6 +5,7 @@ body {
 nav {
     background: lightyellow;
     padding: 5px;
+    width: 100vw;
 }
 
 .about-me {
@@ -15,7 +16,8 @@ nav {
 }
 
 img {
-    max-width: 350px;
+    max-width: 350px
+    min-width: 350px;
 }
 
 footer {
@@ -35,6 +37,7 @@ form {
     margin-top: 200px;
     width: 500px;
     padding: 30px;
+
 }
 
 img {
@@ -44,6 +47,59 @@ img {
 .container {
     background: dimgrey;
     width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ .portfolio {
+    background: dimgrey;
+    width: 50vw;
     margin: 150px 800px 500px 100px;
     padding: 20px;
+    display: block;
+ }
+
+@media only screen and (max-width: 500px) {
+
+    .nav {
+        flex-direction: column;
+        display: block;
+    }
+
+    .portfolio {
+        margin: 0;
+    }
+
+    .contact {
+       margin-top: 0;
+   } 
+
+   .about-me {
+       margin: 0 0 0 0;
+   }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .nav {
+        flex-direction: column;
+        display: block;
+    }
+
+    .portfolio {
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact {
+       margin-top: 0;
+       width: 100%;
+   } 
+
+   .about-me {
+       margin: 0 0 0 0;
+   }
+
+   footer {
+       max-height: 30px;
+   }
 }
