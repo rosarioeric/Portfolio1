@@ -13,11 +13,13 @@ nav {
     width: 500px;
     margin: 150px 800px 500px 100px;
     padding: 20px;
+    border-radius: 50px;
 }
 
 img {
     max-width: 350px
-    min-width: 350px;
+    min-height: 350px;
+    border-radius: 50px;
 }
 
 footer {
@@ -33,11 +35,10 @@ footer {
 
 form {
     background: dimgray;
-    margin: 0 auto;
-    margin-top: 200px;
+    margin: 150px 800px 500px 100px;
     width: 500px;
     padding: 30px;
-
+    border-radius: 50px;
 }
 
 img {
@@ -49,6 +50,7 @@ img {
     width: 800px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 50px;
 }
  .portfolio {
     background: dimgrey;
@@ -56,50 +58,49 @@ img {
     margin: 150px 800px 500px 100px;
     padding: 20px;
     display: block;
+    border-radius: 50px;
  }
 
-@media only screen and (max-width: 500px) {
+
+
+@media only screen and (max-width: 767px) {
 
     .nav {
-        flex-direction: column;
         display: block;
     }
 
-    .portfolio {
-        margin: 0;
-    }
-
     .contact {
-       margin-top: 0;
+        max-width: 66%;
    } 
-
-   .about-me {
-       margin: 0 0 0 0;
-   }
-}
-
-@media only screen and (max-width: 375px) {
-
-    .nav {
-        flex-direction: column;
-        display: block;
-    }
-
-    .portfolio {
-        margin: 0;
-        width: 100%;
-    }
-
-    .contact {
-       margin-top: 0;
-       width: 100%;
-   } 
-
-   .about-me {
-       margin: 0 0 0 0;
-   }
 
    footer {
        max-height: 30px;
    }
+}
+
+
+
+@media only screen and (max-width: 399px) {
+
+    .portfolio {
+        width: 100vw;
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    .about-me {
+        background: dimgrey;
+        width: 100vw;
+        margin: 0;
+        padding: 20px;
+        border-radius: 0px;
+    }
+
+    form {
+        background: dimgray;
+        margin: 0;
+        width: 100vw;
+        padding: 15px;
+        display: block;
+}
 }
