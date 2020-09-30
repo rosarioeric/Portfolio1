@@ -1,19 +1,31 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/48/1d/74/481d7412545523df9093ab7d60a5b7da.jpg);
+    background-image: url(https://ak.picdn.net/shutterstock/videos/1023506299/thumb/1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vw;
 }
 
-nav {
+.navbar {
     background: lightyellow;
     padding: 5px;
     width: 100vw;
+    height: 75px;
+}
+.navbar-name {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 40px;
+    display: inline;
 }
 
 .about-me {
-    background: dimgrey;
+    background: rgba(127, 122, 136, 0.426);
     width: 500px;
-    margin: 150px 800px 500px 100px;
+    margin: 30px auto;
     padding: 20px;
     border-radius: 50px;
+    color: white;
 }
 
 img {
@@ -23,7 +35,7 @@ img {
 }
 
 footer {
-    background: dimgrey;
+    background: rgba(127, 122, 136, 0.426);
     border-top: 5px solid lightyellow;
     position: fixed;
     left: 0;
@@ -34,7 +46,7 @@ footer {
 }
 
 form {
-    background: dimgray;
+    background: rgba(127, 122, 136, 0.426);
     margin: 150px 800px 500px 100px;
     width: 500px;
     padding: 30px;
@@ -45,22 +57,73 @@ img {
     width: 350px;
 }
 
-.container {
-    background: dimgrey;
+container {
+    background: rgba(127, 122, 136, 0.426);
     width: 800px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 50px;
 }
- .portfolio {
-    background: dimgrey;
-    width: 50vw;
-    margin: 150px 800px 500px 100px;
+ #portfolio {
+    background: rgba(127, 122, 136, 0.426);
+    width: 75vw;
+    margin: 30 auto;
     padding: 20px;
     display: block;
     border-radius: 50px;
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
  }
 
+ .contactHeader {
+     text-align: center;
+ }
+
+ .btn {
+     margin-left: 175px;
+ }
+ /* .container {
+   position: relative;
+   width: 50%;
+ }
+ 
+ .col {
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+ }
+ 
+ .middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ .container:hover .image{
+   opacity: 0.3;
+ }
+ 
+ .container:hover .middle {
+   opacity: 1;
+ }
+ 
+ .text {
+   background-color: #4CAF50;
+   color: white;
+   font-size: 16px;
+   padding: 16px 32px;
+ } */
 
 
 @media only screen and (max-width: 767px) {
@@ -81,11 +144,16 @@ img {
 
 
 @media only screen and (max-width: 399px) {
-
-    .portfolio {
+    body {
+        background: darkgrey;
+    }
+    #portfolio {
         width: 100vw;
         margin: 0;
         border-radius: 0px;
+        background: dimgrey;
+        padding: 20px;
+
     }
 
     .about-me {
@@ -96,11 +164,16 @@ img {
         border-radius: 0px;
     }
 
-    form {
+    .contact {
         background: dimgray;
-        margin: 0;
-        width: 100vw;
-        padding: 15px;
+        margin: 0 auto;
+        width: 100vw; */
+        /* padding: 15px; */
         display: block;
 }
+
+.btn {
+    margin-left: 140px;
+    margin-bottom: 40px;
 }
+/* =========================== */
